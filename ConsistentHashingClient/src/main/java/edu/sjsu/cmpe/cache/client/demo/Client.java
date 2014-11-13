@@ -68,7 +68,8 @@ public class Client {
 		BigInteger serverSelectionCount = digestKeyValueInt.mod(new BigInteger(String.valueOf(listOfServers.size())));
 		System.out.println(" ");
 		System.out.print("Putting Element :");
-		System.out.println(dataCollection.get(i));
+		System.out.print(dataCollection.get(i));
+		System.out.println(" & Key:" + i );
 		System.out.println("**To cache bucket no :"+ serverSelectionCount);
 		
 		int CheckBucket = serverSelectionCount.intValue();
@@ -101,7 +102,8 @@ public class Client {
     	 		BigInteger serverSelectionCount = digestKeyValueInt.mod(new BigInteger(String.valueOf(listOfServers.size())));
     	 		 System.out.println(" ");
     	 		 System.out.print("###retriving  element :");
-    	         System.out.println( listOfServers.get(serverSelectionCount.intValue()).get(i));
+    	         System.out.print( listOfServers.get(serverSelectionCount.intValue()).get(i));
+    	         System.out.println(" & Key:" + i );
     	         System.out.println("from server Bucket cache no. :" + serverSelectionCount.intValue());
     	        // System.out.println("from server :" +  listOfServers.get(serverSelectionCount.intValue()));
     	         int CheckBucket1 = serverSelectionCount.intValue();
