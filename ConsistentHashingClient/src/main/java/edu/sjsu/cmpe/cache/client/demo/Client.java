@@ -44,6 +44,7 @@ public class Client {
     	dataCollection.put(7, "G");
     	dataCollection.put(8, "H");
     	dataCollection.put(9, "I");
+    	dataCollection.put(10, "J");
     
     	
     	// For obtaining the message digest we have used hashing Method = SHA-1.
@@ -56,7 +57,7 @@ public class Client {
    //******************************************************************************************************** 
     	int i;
     	//String j;
-    	for ( i=1; i<= 9; i++ ) 
+    	for ( i=1; i<= 10; i++ ) 
     		
     	{
     	
@@ -94,7 +95,7 @@ public class Client {
    //******************************************************************************************************** 
   // logic for locating the object stored at previous stage.
   //******************************************************************************************************** 
-    	     for(i = 1;  i <= 9 ; i++ ) {
+    	     for(i = 1;  i <= 10 ; i++ ) {
     	    	 buffer.clear();	
     	     	 buffer.putLong(i);
     	    	 byte [] digestKeyValue = digestType.digest(buffer.array());
